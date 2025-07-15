@@ -227,6 +227,9 @@ function validacao(dialog, pergunta, inputRef) {
     if (novoValor > 10 && inputRef === "q2") {
       alert("Limite máximo: 10");
       return;
+    } else if (novoValor % 1 !== 0) {
+      alert("Error! Valores decimais para postos.")
+      return
     }
     console.log("Esperando respostas: Valores de postos");
   }
